@@ -1,0 +1,32 @@
+<ion-header>
+      <ion-navbar>
+            <ion-title>
+                      inscription
+            </ion-title>
+        </ion-navbar>
+</ion-header>
+   
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label floating>firstname</ion-label>
+            <ion-input type="text" name="firstname" [(ngModel)]="user.firstname"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>lastname</ion-label>
+            <ion-input type="text" name="lastname" [(ngModel)]="user.lastname"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>login</ion-label>
+            <ion-input type="text" name="login" [(ngModel)]="user.login"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>password</ion-label>
+            <ion-input type="text" name="password" [(ngModel)]="user.password"></ion-input>
+        </ion-item>
+
+        <button ion-button block class = "btn btn-success" (click)="submit()"> ajouter</button>
+
+    </ion-list>
+
+   </ion-content>
