@@ -1,5 +1,5 @@
 <ion-header>
-      <ion-navbar>
+       <ion-navbar>
             <ion-title>
                       inscription
             </ion-title>
@@ -21,11 +21,16 @@
             <ion-input type="text" name="login" [(ngModel)]="user.login"></ion-input>
         </ion-item>
         <ion-item>
-            <ion-label floating>password</ion-label>
-            <ion-input type="text" name="password" [(ngModel)]="user.password"></ion-input>
+            <ion-label floating>id</ion-label>
+            <ion-input type="text" name="id" [(ngModel)]="user.id"></ion-input>
         </ion-item>
+       
 
-        <button ion-button block class = "btn btn-success" (click)="submit()"> ajouter</button>
+        <button ion-button block class = "btn btn-success" (click)="submit()">   ajouter  </button>
+
+
+
+
 
     </ion-list>
 

@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>suppression</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+
+<h3 class="p-3 text-center"> Utilisateurs</h3>
+<div class="container">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>login </th>
+                <th>id </th>
+            </tr>
+            <button ion-button block class = "btn btn-success" (click)="removeUsers(user)">   supprimer  </button>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.firstname}}</td>
+                <td>{{user.lastname}}</td>
+                <td>{{user.login}}</td>
+                <td>{{user.id}}</td>
+
+                // <button ion-button block class = "btn btn-success" (click)="removeUser(user)">   supprimer  </button>
+                // <ion-icon name='trash' (click)="deleteitem(user._id)" item-end color="secondary"></ion-icon>
+
+
+             </tr>
+
+        </tbody>
+    </table>
+</div>
+</ion-content>
+
+
+
+
